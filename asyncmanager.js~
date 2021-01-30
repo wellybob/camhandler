@@ -1,0 +1,13 @@
+//
+var async = require ('async');
+var Watchdir = require('/home/pi/Documents/NODEJSDEV/camhandler/watchdir');
+var Copyfile = require('/home/pi/Documents/NODEJSDEV/camhandler/copyfile');
+
+function Asyncmanager (){async.waterfall([
+Watchdir
+,
+Copyfile
+]);
+}
+
+module.exports = Asyncmanager;
